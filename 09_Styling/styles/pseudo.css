@@ -1,0 +1,11 @@
+a:visited {
+    color: orangered;
+}
+
+a:hover {
+    color: black;
+}
+
+p::first-letter {
+    color: red;
+}
