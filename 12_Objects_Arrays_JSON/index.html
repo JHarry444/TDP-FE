@@ -18,6 +18,8 @@
         }
         me.name
         me["name"]
+        // EXAMPLE OF LOADING JSON DATA - USES CONCEPTS FROM LATER IN COURSE
+        // DON'T WORRY ABOUT UNDERSTANDING IT I JUST WANTED TO SHOW OFF HOW EASY IT IS TO USE JSON DATA IN JS
         fetch('https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json')
             .then(response => response.json())
             .then(data => console.log(data));
