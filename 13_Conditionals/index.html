@@ -86,6 +86,15 @@
         typeof NaN
 
         truthyFalsey("false");
+
+        function getNumber() {
+            let num;
+            do {
+                let userInput = prompt("Please enter a number between 1 and 10");
+                num = Number.parseInt(userInput);
+            } while (!(num >= 1 && num <= 10));
+            return num;
+        }
     </script>
 </head>
 
