@@ -1,5 +1,5 @@
 "use strict" // tells the browser to hold you to modern JS standards
-multiply(20, 2);
+multiply(20, 2)
 
 function hoisting() {
     console.log(x);
@@ -21,4 +21,8 @@ function noHoisting() {
 function impliedGlobal() {
     j = 27;
     console.log(j);
+}
+
+function add(a, b) {
+    console.log("Yo!");
 }
