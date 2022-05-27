@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handle Events</title>
+    <style>
+        img.card-hidden {
+            display: none;
+        }
+        img.card-show {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="card-preview" class="card-hidden">
+    </div>
+    <label for="cardName">Card name:</label>
+    <input type="text" name="cardName" id="cardName">
+    <button onmouseout="hideCard()" onmouseover="showCard(event)">FIND</button>
+    <br>
+    <br>
+    <br>
+    <input type="text" id="textOriginal">
+    <br>
+    <button onclick="copyText()">Copy</button>
+    <input type="text" id="textCopy" readonly>
+    <br>
+    <br>
+    <label for="milesInput">Miles</label>
+    <input oninput="convertToKM(event)" type="number" id="milesInput" value="0" min="0">
+    <label for="kmInput">KM</label>
+    <input oninput="convertToMiles(event)" type="number" id="kmInput" value="0" min="0">
+    <script src="./index.js"></script>
+</body>
+
+</html>
