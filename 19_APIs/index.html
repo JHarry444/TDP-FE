@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <section>
+        <form id="duckForm">
+            <label for="duckName">Name:</label>
+            <input type="text" name="duckName" id="duckName">
+            <label for="duckAge">Age;</label>
+            <input type="number" name="duckAge" id="duckAge">
+            <label for="duckHabitat">Habitat:</label>
+            <input type="text" name="duckHabitat" id="duckHabitat">
+            <label for="duckGender">Gender:</label>
+            <input type="text" name="duckGender" id="duckGender">
+            <button type="reset">Reset</button>
+            <button>Submit</button>
+        </form>
+    </section>
+    <div id="output"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
